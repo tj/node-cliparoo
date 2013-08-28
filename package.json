@@ -1,6 +1,6 @@
 {
   "name": "cliparoo",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "repo": "visionmedia/node-cliparoo",
   "description": "Hacky clipboard support",
   "keywords": ["clipboard", "copy"],
