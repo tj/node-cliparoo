@@ -1,0 +1,15 @@
+{
+  "name": "cliparoo",
+  "version": "0.0.1",
+  "repo": "visionmedia/node-cliparoo",
+  "description": "Hacky clipboard support",
+  "keywords": ["clipboard", "copy"],
+  "dependencies": {
+    "shell-escape": "0.0.0"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "should": "*"
+  },
+  "license": "MIT"
+}
