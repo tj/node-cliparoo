@@ -44,5 +44,5 @@ function mac(str, fn) {
 
 function execute(program, str, fn) {
   var cmd = escape(['printf', str]) + ' | ' + program;
-  exec(cmd, fn);
+  exec(cmd, fn || function(){});
 }
