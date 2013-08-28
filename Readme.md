@@ -12,7 +12,7 @@ $ npm install cliparoo
 ## Example
 
 ```js
-var clip = require('./');
+var clip = require('cliparoo');
 
 clip('Hello "World"', function(err){
   if (err) throw err;
