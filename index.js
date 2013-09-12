@@ -1,4 +1,3 @@
-
 /**
  * Module dependencies.
  */
@@ -43,6 +42,6 @@ function mac(str, fn) {
 // exec
 
 function execute(program, str, fn) {
-  var cmd = escape(['printf', str]) + ' | ' + program;
+  var cmd = escape(['echo', str]) + ' | ' + program;
   exec(cmd, fn || function(){});
 }
