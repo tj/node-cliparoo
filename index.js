@@ -31,7 +31,7 @@ function windows(str, fn) {
 // linux
 
 function linux(str, fn) {
-  execute('xclip', str, fn);
+  execute('xclip -selection clipboard', str, fn);
 }
 
 // mac
