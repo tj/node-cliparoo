@@ -10,6 +10,7 @@ var os = require('os');
 // platforms
 
 switch (os.platform()) {
+  case 'freebsd': return module.exports = freebsd;
   case 'win': return module.exports = windows;
   case 'linux': return module.exports = linux;
   case 'darwin': return module.exports = mac;
@@ -20,6 +21,12 @@ switch (os.platform()) {
 
 function unsupported(str, fn) {
   fn(new Error('unsupported platform'));
+}
+
+// freebsd
+
+function freebsd(str, fn) {
+  execute('xsel -i -b', str, fn);
 }
 
 // windows
