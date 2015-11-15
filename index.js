@@ -11,7 +11,7 @@ var os = require('os');
 
 switch (os.platform()) {
   case 'freebsd': return module.exports = freebsd;
-  case 'win': return module.exports = windows;
+  case 'win32': return module.exports = windows;
   case 'linux': return module.exports = linux;
   case 'darwin': return module.exports = mac;
   default: return module.exports = unsupported;
